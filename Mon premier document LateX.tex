@@ -1,0 +1,113 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+\usepackage{hyperref}
+
+\newcommand{\nompropre}[1]{\textit{#1}}
+
+\title{Mon premier document \LaTeX \\ Cours de TPTS}
+\author{\nompropre{J. Messamah} \and \nompropre{Mazri} \thanks{USTHB}}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+Voici mon premier document avec \LaTeX
+
+\section*{Introduction générale}
+\addcontentsline{toc}{section}{Introduction générale}
+
+\section{Introduction}
+
+\input{section 2} %Il ne faut pas mettre de préambule dans le fichier
+
+\section{Test de numérotation}
+\label{section/referenceTest}
+
+\section{Commandes de hiérarchisation du document}
+
+Je suis entrain d'écrire et puis je fais référence à la section \ref{section/referenceTest}. On peut aussi utiliser la commande \pageref{section/referenceTest}
+
+\subsection{Ceci est une sous-section}
+
+Ceci est un paragraphe. Dans \LaTeX\ les paragraphes sont séparés par des lignes blanches.
+
+Ceci est un deuxième paragraphe.
+
+\subsubsection{Ceci est une sous-sous-section}
+
+Une note de bas de page \footnote{Ceci est une note de base de page.}.
+Une note dans la marge \marginpar{Ceci une une note}
+
+\section{Changement de Style et déclarations}
+
+\textup{droit} , \textit{le texte en italique}, \textbf{texte en gras}.
+On peut aussi imbriquer les commandes de changement de style. \textit{\textbf{Ceci est un exemple}}.
+
+{\itshape tout ce que j'écris est maintenant en italique}. Maintenant j'écris normalement.
+
+\section{environnement}
+
+\begin{em}
+Le texte contenu dans cet environnement est mis en relief.
+\end{em}
+
+\begin{quote}
+Voici un exemple de texte sur deux paragraphes, afin de montrer le comportement des environements de citation.
+
+Voici un exemple de texte sur deux paragraphes, afin de montrer le comportement des environements de citation.
+\end{quote}
+
+Voici un exemple de l'environement quotation
+
+
+\begin{quotation}
+Voici un exemple de texte sur deux paragraphes, afin de montrer le comportement des environements de citation.
+
+Voici un exemple de texte sur deux paragraphes, afin de montrer le comportement des environements de citation.
+\end{quotation}
+
+\begin{center}
+Voici un paragraphe centré.
+\end{center}
+
+\begin{flushleft}
+Voici un paragraphe aligné à gauche.
+\end{flushleft}
+
+\begin{flushright}
+Voici un paragraphe aligné à droite.
+\end{flushright}
+
+Les listes permettent :
+\begin{itemize}
+
+\item de structurer ses idées ;
+
+\item d'aérer le texte ;
+
+\item d'améliorer sa lisibilité.
+
+\end{itemize}
+
+\begin{enumerate}
+
+\item premier élément;
+
+\item deuxième élément;
+
+\item troisième élément.
+
+\end{enumerate}
+\appendix
+\section{Première annexe}
+
+\end{document}
