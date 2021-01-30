@@ -1,10 +1,12 @@
 \documentclass[a4paper,11pt]{article}
 
+\usepackage{amsmath}
 \usepackage[french]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{microtype}
+\usepackage{physics}
 
 \usepackage{hyperref}
 
@@ -107,6 +109,110 @@ Les listes permettent :
 \item troisième élément.
 
 \end{enumerate}
+
+\section{Environnement tabular}
+
+\begin{tabular}{|l|c|r|}
+\hline
+Sparc & SunOS  & 4.1.4 \\
+\hline
+Hp     & HP-UX  & 10.20 \\
+\hline
+PC     & NetBSD & 1.2.1  \\
+\hline 
+\end{tabular}
+
+\bigskip
+
+\begin{tabular}{|p{5cm}|*{2}{c|}}
+\hline
+\bfseries Sparc & SunOS  & 4.1.4 \\
+\hline
+\bfseries Hp     & HP-UX  & 10.20 \\
+\hline
+\bfseries PC     & NetBSD & 1.2.1  \\
+\hline 
+\end{tabular}
+
+\bigskip
+
+
+\begin{tabular}{|p{5cm}|*{2}{c|}}
+\hline
+					                & Contenance & Quantité \\
+\hline
+\bfseries Blanche de Bruges & 33 cl            & 10          \\
+\hline
+\bfseries Guinness               & 1 pint           & 5            \\
+\hline
+\bfseries Kronenbourg         & 33 cl             & 0            \\
+\hline
+\end{tabular}
+
+\bigskip
+
+\begin{tabular}{|p{5cm}|*{2}{c|}}
+\cline{2-3}
+\multicolumn{1}{c|}{}        & \multicolumn{2}{c|}{Commande} \\
+\cline{2-3}
+\multicolumn{1}{c|}{}        & Contenance & Quantité \\
+\hline
+\bfseries Blanche de Bruges & 33 cl            & 10          \\
+\hline
+\bfseries Guinness               & 1 pint           & 5            \\
+\hline
+\bfseries Kronenbourg         & 33 cl             & 0            \\
+\hline
+\end{tabular}
+
+\begin{table}[!htbp] % ! respecter l'ordre, h : ici si possible, t : top, b : bottom, p : page of floats
+\centering
+\begin{tabular}{|l|l|}
+\hline
+table      & figure   \\
+\hline
+tableaux & dessins \\
+\hline
+\end{tabular}
+\caption{Exemple d'environnement tableaux}
+\label{tableau/exemple}
+\end{table}
+
+\section{Mathématique}
+Considérons l'équation \begin{math} x + y + z = n \end{math} .
+Considéron la variable $ x $. Ou bien \( x\).
+
+Ce qui conduit à :
+
+\begin{displaymath}
+x + y + z = n
+\end{displaymath}
+
+\[
+x+y+z=n
+\]
+
+$ x^2 +y^2=1 $ , $ x_1 = x_2 $ , $ x_1^2=x^2_1 $
+$ x_{ij} $ , $ x^{y^z} $ , $ x^{yz} $
+
+\[
+f(x) > 1 \mbox{ si } x < 3 %\, \: \; \! \quad \qqud pour les espaces
+\]
+
+\[
+\frac{x}{\sqrt{y}}
+\]
+
+\[
+\left (\frac{\sqrt[n]{\alpha_i}}{x^2+y^2}\right )
+\]
+$ \alpha $ , $\beta $ , $\Gamma$ , $\phi$ , $\varphi$
+
+\[
+\mathrm{i}\hbar\frac{\mathrm{d}}{\mathrm{d}t} \ket{\psi^\dagger}= \mathbf{H} \ket{\psi}
+\]
+
+
 \appendix
 \section{Première annexe}
 
