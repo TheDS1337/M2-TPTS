@@ -11,6 +11,7 @@
 \usepackage{hyperref}
 
 \newcommand{\nompropre}[1]{\textit{#1}}
+\newcommand{\diff}{\ \mathrm{d}}
 
 \title{Mon premier document \LaTeX \\ Cours de TPTS}
 \author{\nompropre{J. Messamah} \and \nompropre{Mazri} \thanks{USTHB}}
@@ -212,7 +213,44 @@ $ \alpha $ , $\beta $ , $\Gamma$ , $\phi$ , $\varphi$
 \mathrm{i}\hbar\frac{\mathrm{d}}{\mathrm{d}t} \ket{\psi^\dagger}= \mathbf{H} \ket{\psi}
 \]
 
+\[
+{\mathcal A} = \left (
+\begin{array}{ccc}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{array}
+\right )
+\]
 
+\[
+{\mathcal B} = \left (
+\begin{array}{cccc}
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots  & \vdots   & \ddots & \vdots  \\
+a_{n1} & a_{n2} & \cdots & a_{nn}
+\end{array}
+\right )
+\]
+
+\begin{equation} \label{equation/euler}
+\mathrm{e}^{\mathrm{i}\pi}+1=0
+\end{equation}
+
+\begin{eqnarray}
+\ln xy                           & = & \ln x + \ln y \\
+\exp \left ( x+y \right ) & = & \mathrm{e}^x  \mathrm{e}^y
+\end{eqnarray}
+
+\begin{eqnarray}
+\int_1^2 x^2 \diff x & = & \left[\frac{x^3}{3}\right ]_1^2 \nonumber \\
+                               & = & \frac{7}{3}
+\end{eqnarray}
+
+Voir équation \eqref{equation/euler}.
+
+$\vec{a}\cdot\vec{b}$
 \appendix
 \section{Première annexe}
 
