@@ -28,6 +28,9 @@ Voici mon premier document avec \LaTeX
 \section*{Introduction générale}
 \addcontentsline{toc}{section}{Introduction générale}
 
+Ce cours est basé sur les travaux de la référence \cite{latex-a-document-preparation-system} ainsi que la référence \cite[chapitre 2]{the-latex-companion}.
+\addcontentsline{toc}{section}{Introduction générale}
+
 \section{Introduction}
 
 \input{section 2} %Il ne faut pas mettre de préambule dans le fichier
@@ -254,4 +257,18 @@ $\vec{a}\cdot\vec{b}$
 \appendix
 \section{Première annexe}
 
+\begin{thebibliography}{2}
+\addcontentsline{toc}{section}{Références}
+
+\bibitem{latex-a-document-preparation-system}
+	Leslie Lamport :
+	\textit{\LaTeX: a document preparation system}.
+	Addison-Wesley, second edition, 1994.
+
+\bibitem{the-latex-companion}
+	Frank Mittelbach et Michel Goossens :
+	\textit{The \LaTeX Companion}.
+	Addison-Wesley, second edition, 2004.
+
+\end{thebibliography}
 \end{document}
