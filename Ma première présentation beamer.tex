@@ -1,0 +1,68 @@
+\documentclass{beamer}
+
+%préambule nécessaire
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+%reste du préambule
+%la page de titre
+\title[Mémoire]{Mon mémoire de Master 2}
+\subtitle{Ma vie, mon œuvre}
+\author{Nom de l'auteur}
+\institute[USTHB]{Département de Physique Théorique, \\
+				Faculté de Physique,\\
+				USTHB.}
+\date{date de la soutenance}
+%commandes beamer
+\setbeamercovered{transparent}
+\usetheme{AnnArbor}
+\usecolortheme[RGB={0,171,199}]{structure}
+\logo{\includegraphics[width=1cm]{USTHB_logo}}
+
+
+
+\begin{document}
+
+\begin{frame}
+
+	\titlepage
+
+\end{frame}
+
+\begin{frame}{Le plan}
+
+	\begin{itemize}
+
+		\item<1-> Introduction
+		
+		\item<2-> État de l'art
+
+		\item<3-> Méthode
+
+		\item<4-> Résultats et discussion
+
+		\item<5-> Conclusion
+
+		\item<6-> Bibliographie
+
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Introduction}
+
+	\uncover<1->{Ceci est la présentation de mon mémoire de 		Master 2.}
+	\uncover<2->{Il a été réalisé au laboratoire de Physique 			Théorique.}
+	\uncover<3->{Sous la direction de mon encadreur.}
+
+	\begin{uncoverenv}<4->
+		Mon mémoire consiste en l'étude de influence de la 					précision de la mesure sur le colonage quantique.
+	\end{uncoverenv}
+
+\end{frame}
+
+
+\end{document}

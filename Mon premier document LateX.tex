@@ -13,6 +13,8 @@
 \newcommand{\nompropre}[1]{\textit{#1}}
 \newcommand{\diff}{\ \mathrm{d}}
 
+\bibliographystyle{unsrt-fr}
+
 \title{Mon premier document \LaTeX \\ Cours de TPTS}
 \author{\nompropre{J. Messamah} \and \nompropre{Mazri} \thanks{USTHB}}
 \date{}
@@ -28,7 +30,7 @@ Voici mon premier document avec \LaTeX
 \section*{Introduction générale}
 \addcontentsline{toc}{section}{Introduction générale}
 
-Ce cours est basé sur les travaux de la référence \cite{latex-a-document-preparation-system} ainsi que la référence \cite[chapitre 2]{the-latex-companion}.
+Ce cours est basé sur les travaux de la référence \cite{Lamport1994} ainsi que la référence \cite[page 4]{messamah2015quantum}.
 \addcontentsline{toc}{section}{Introduction générale}
 
 \section{Introduction}
@@ -257,18 +259,20 @@ $\vec{a}\cdot\vec{b}$
 \appendix
 \section{Première annexe}
 
-\begin{thebibliography}{2}
-\addcontentsline{toc}{section}{Références}
+%\begin{thebibliography}{2}
+%\addcontentsline{toc}{section}{Références}
+%
+%\bibitem{latex-a-document-preparation-system}
+%  Leslie Lamport :
+%  \textit{\LaTeX: a document preparation system}.
+%  Addison-Wesley, second edition, 1994.
+%
+%\bibitem{the-latex-companion}
+%  Frank Mittelbach et Michel Goossens :
+%  \textit{The \LaTeX Companion}.
+%  Addison-Wesley, second edition, 2004.
+%
+%\end{thebibliography}
 
-\bibitem{latex-a-document-preparation-system}
-	Leslie Lamport :
-	\textit{\LaTeX: a document preparation system}.
-	Addison-Wesley, second edition, 1994.
-
-\bibitem{the-latex-companion}
-	Frank Mittelbach et Michel Goossens :
-	\textit{The \LaTeX Companion}.
-	Addison-Wesley, second edition, 2004.
-
-\end{thebibliography}
+\bibliography{Bibliographie}
 \end{document}
